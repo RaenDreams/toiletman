@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./assets/toilet.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Toiletman</title>
+  </head>
+  <body>
+    <h1>Toiletman</h1>
+    <img src="./assets/latest-1876938726.png" alt="" id="toilet-image" />
+    <div id="game-box">
+      <div class="word">
+        <div id="blanks"></div>
+        <div id="meaning"></div>
+      </div>
+      <div id="letters">
+        <button onclick="clickedLetter('A')">A</button>
+        <button onclick="clickedLetter('B')">B</button>
+        <button onclick="clickedLetter('C')">C</button>
+        <button onclick="clickedLetter('D')">D</button>
+        <button onclick="clickedLetter('E')">E</button>
+        <button onclick="clickedLetter('F')">F</button>
+        <button onclick="clickedLetter('G')">G</button>
+        <button onclick="clickedLetter('H')">H</button>
+        <button onclick="clickedLetter('I')">I</button>
+        <button onclick="clickedLetter('J')">J</button>
+        <button onclick="clickedLetter('K')">K</button>
+        <button onclick="clickedLetter('L')">L</button>
+        <button onclick="clickedLetter('M')">M</button>
+        <button onclick="clickedLetter('N')">N</button>
+        <button onclick="clickedLetter('O')">O</button>
+        <button onclick="clickedLetter('P')">P</button>
+        <button onclick="clickedLetter('Q')">Q</button>
+        <button onclick="clickedLetter('R')">R</button>
+        <button onclick="clickedLetter('S')">S</button>
+        <button onclick="clickedLetter('T')">T</button>
+        <button onclick="clickedLetter('U')">U</button>
+        <button onclick="clickedLetter('V')">V</button>
+        <button onclick="clickedLetter('W')">W</button>
+        <button onclick="clickedLetter('X')">X</button>
+        <button onclick="clickedLetter('Y')">Y</button>
+        <button onclick="clickedLetter('Z')">Z</button>
+      </div>
+      <div class="scores">
+        <div class="score-section">
+          Attempts left:
+          <p id="attempts"></p>
+        </div>
+        <div class="score-section">
+          Score:
+          <p id="score"></p>
+        </div>
+      </div>
+      <button class="restart" onclick="restart()">Re Roll</button>
+    </div>
+    <div id="game-over">
+      <p>Hah, you just got vOwOred by skibidi toilet. The correct word was:</p>
+      <p id="correct-word"></p>
+      <button class="restart" onclick="restart()">RESTART</button>
+    </div>
+    <div id="game-won">
+      <p>
+        Wohiow! Zamn, that rizzling gyatt so phatt and bussin you gassed the
+        word right!
+      </p>
+      <button class="restart" onclick="restart()">RESTART</button>
+    </div>
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
